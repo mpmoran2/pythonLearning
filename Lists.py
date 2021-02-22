@@ -40,4 +40,3 @@ print(favfruits)
 # find the index value of an item
 print(favfruits.index("Peach"))
 
-# Range Function
