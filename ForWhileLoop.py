@@ -15,3 +15,11 @@ for x in fruits:
 
 for x in range(0,21,2):
     print(x) # for evey iteration it will print the evens (starting from 0, intervals of 2)
+
+# WHILE Loops Similar to For Loops
+counter = 0
+
+while(counter<10): # condition given to do the loop
+    print(counter)
+    counter +=1
+    # this prints the counter value then goes up by 1 increment until counter hits 10 where it stops
