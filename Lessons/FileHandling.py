@@ -5,7 +5,16 @@
 # You need to open it before doing anything to it. (Open, read/write, close)
 
 # use the open() function. Paramaters are "filename.txt", 'mode'
-file = open("filehandling.txt", 'w') # We will open the file filehandling.txt in the write mode. We can ONLY write the file
-# Here we would do something to the file
-# After we are done reading or writing data to the file we need to close to avoid errors
+# file = open("filehandling.txt", 'w') # We will open the file filehandling.txt in the write mode. We can ONLY write the file
+# # Here we would do something to the file
+# # After we are done reading or writing data to the file we need to close to avoid errors
+# file.close()
+
+
+# Reading Data from a File
+file = open("filehandling.txt", 'r') # Mode is read
+content = file.read() # This will read the content from the file and save into the variable content.
+# Parameter here would be reading 10 bytes of data from the file
+# If you only need to read a particular line, use .readline() function
+print(content)
 file.close()
