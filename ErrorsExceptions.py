@@ -12,7 +12,8 @@ function1(3,29)
 
 # Logical Error: Harder to debug as the code runs but was an error in the programmers logic
 def function2(a,b):
-    print(a*b) # we wanted to add but accidentally put a multiply symbol. It will run but it will be wrong for what you want
+    print(a*b)
+    # we wanted to add but accidentally put a multiply symbol. It will run but it will be wrong for what you want
 
 function2(3,29)
 
