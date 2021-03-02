@@ -21,7 +21,7 @@
 
 # Adding data to the file
 file = open("filehandling.txt", 'w')
-file.write("Hire me please")
+file.write("Bleep Beep")
 file.close()
 
 file = open("filehandling.txt", 'r')
@@ -32,3 +32,12 @@ file.close()
 # If we need to add more we must use the Append mode, other wise anything we try to add in write mode will just over ride the previous data in the .txt file
 
 # Appending data to the file
+file = open("filehandling.txt", 'a')
+file.write(" Imma Sheep")
+file.close()
+
+file = open("filehandling.txt", 'r')
+content = file.read()
+print(content)
+file.close()
+
