@@ -28,3 +28,25 @@ print(a)
 
 
 # String Functions
+# .join()
+print("/".join(["Dog", "Cat", "Bird"]))
+
+# .replace()
+print("Hello Sunshine".replace("Sunshine", "Moonlight"))
+# alt format
+uwu = "Hello"
+print(uwu.replace("Hello", "Hewwo"))
+
+# .startswith()
+curse = "De cuwse has spwead"
+print(curse.startswith("The"))
+
+# .endswith()
+print(curse.endswith("spwead"))
+
+# .upper()
+print(curse.upper())
+
+# .lower()
+print(curse.lower())
+
