@@ -13,3 +13,14 @@ print(people["Morgan"]) # To look up the value of a key you need to state the di
 cute = {"Sheep":"Yes", "Otter":"Yes", "Mole Rat":"Hell No"}
 print(cute["Mole Rat"])
 
+# Dictionary Functions
+numbers = {1:"One", 2:"two", 3:"three"}
+# See if 1 in in our dictionary
+print(1 in numbers)
+# Should give us true (SIMILAR TO LISTS)
+print(5 in numbers)
+# This should give us false
+
+# GET Function
+print(numbers.get(2)) # This gets us the value of 2 in our dictionary
+print(numbers.get(5, "Not in Numbers")) # The second parameter here is what we want to be printed if 5 is not found vs the 'None' we would usually get
