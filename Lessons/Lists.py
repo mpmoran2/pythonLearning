@@ -53,4 +53,11 @@ print(numbers[4:])
 print(numbers[1:6:2]) # list[start:stop:interval]
 
 
-#
+# List comprehension: a way to create a list by defining a certain set of rules in a list
+list = [x**2 for x in range(5)]
+# We give a rule to find the square of numbers 0-5 in a for loop
+print(list)
+
+# can include if statements in the rule
+lists = [x**2 for x in range(5) if x**2 % 2 == 0] # We want to find the square of numbers 0-5 and add them to the list IF they are even
+print(lists)
