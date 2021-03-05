@@ -40,3 +40,17 @@ print(favfruits)
 # find the index value of an item
 print(favfruits.index("Peach"))
 
+
+# List Slicing
+numbers = [0, 10, 20, 30, 40, 50, 60, 70]
+print(numbers[2:5]) # list[starting index:ending index]
+# this gives us 20, 30, 40
+# if we want to just get the first half of the list, we can use the following
+print(numbers[:4]) # print everything before the 3rd index
+# The same goes for the other side of the list
+print(numbers[4:])
+# we can also specify intervals
+print(numbers[1:6:2]) # list[start:stop:interval]
+
+
+#
