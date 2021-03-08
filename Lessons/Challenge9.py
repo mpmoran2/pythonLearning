@@ -5,13 +5,13 @@
 #
 # Design the above two mentioned functions and apply them both simultaneously on the price.
 
-def student_discount(aprice):
-    aprice = aprice - (aprice * 10)/100
-    return aprice
+def student_discount(a):
+    a = a - (a * 10)/100
+    return a
 
-def regulars_discount(price):
-    price = price - (price * 5)/100
-    return price
+def regulars_discount(b):
+    b = b - (b * 5)/100
+    return b
 
 total_price = 100
 
