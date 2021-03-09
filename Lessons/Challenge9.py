@@ -6,13 +6,17 @@
 # Design the above two mentioned functions and apply them both simultaneously on the price.
 
 def student_discount(a):
-    a = a - (a * 10)/100
+    a = a - (a * .10)
     return a
 
 def regulars_discount(b):
-    b = b - (b * 5)/100
+    b = b - (b * .15)
     return b
 
-total_price = 100
+zojirushi = 150
 
-print(regulars_discount(student_discount(total_price)))
+print(student_discount(zojirushi))
+
+print(regulars_discount(zojirushi))
+
+print(regulars_discount(student_discount(zojirushi)))
