@@ -46,6 +46,7 @@ class Person:
 # person1.give_info()
 
 # Inheritance: One class can inherit the methods and properties of another class
+    # can also inherit from multiple classes
 class Student(Person): # We add the class we want to inherit from
 
     def grade(self):
