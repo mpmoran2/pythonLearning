@@ -10,4 +10,4 @@ class Myclass:
 
 object1 = Myclass()
 object1.add(3)
-# print(object1.__hiddenvariable) # because we have it hidden, we will get an error because python protects the variable data outside the class
+# print(object1.__hiddenvariable) # because we have it hidden, we will get an error because python protects the
