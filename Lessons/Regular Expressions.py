@@ -36,13 +36,23 @@ newstring = re.sub(pattern,"Pilahi",string) # subfunction.
 
 print(newstring)
 
-# Dot Metacharacter
+# METACHARACTERS
     # Metacharacters allow us to make our regular expressions more powerful
+# Dot Metacharacter
 pattern = r"gr.y" # the . between gr and y means that there can be any characters in between like grey, gray, etc.
 
 if re.match(pattern, "grpy"):
     print('A match has been found')
+
 # Caret & Dollar metacharacter
+    # Specify beginning or ending of a string
+    # ^ start of a string
+    # $ end of a string
+    # important in learning Django
+pattern = r"^gr.y$" # Unlike with search/findall, this specifies the string MUST start with g and end with y with NO repition
+
+if re.match(pattern, "gray"):
+    print('Matched!')
 
 # Character Class
 
