@@ -9,6 +9,6 @@ class Number:
         return x
 
 number_a = Number(3)
-number_b = Number(4)
+number_b = Number(4)+
 
 print(number_a * number_b)
