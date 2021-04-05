@@ -27,8 +27,14 @@ else:
     print('No match has been found')
     # OR
 print(re.findall(pattern,"baconeggseggsbacon"))
-# Find & Replace
 
+
+# Find & Replace
+string = "My name is Megan. Hi!" # Say we want to change the name
+pattern = r"Megan" # We pass this into the subfunction
+newstring = re.sub(pattern,"Pilahi",string) # subfunction.
+
+print(newstring)
 # Dot Metacharacter
 
 # Caret & Dollar metacharacter
