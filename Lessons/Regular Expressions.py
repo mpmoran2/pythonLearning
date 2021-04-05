@@ -11,14 +11,22 @@ import re
 
 pattern = r"eggs"
     # define the pattern. r"" lets python know we are using a regular expression that contains the string eggs
-if re.match(pattern,"eggseggseggsbacon"):
+if re.match(pattern,"baconeggseggsbacon"): # this gets not found. if we use "eggseggseggsbacon" we get match found
+    print('Match found')
+else:
+    print('No match has been found')
+# Search & Find All
+if re.search(pattern,"baconeggseggsbacon"): # on the otherhand, search gives us a match found
     print('Match found')
 else:
     print('No match has been found')
 
-
-# Search & Find All
-
+if re.findall(pattern,"baconeggseggsbacon"): # findall will find all patterns in a string.
+    print('Match found')
+else:
+    print('No match has been found')
+    # OR
+print(re.findall(pattern,"baconeggseggsbacon"))
 # Find & Replace
 
 # Dot Metacharacter
