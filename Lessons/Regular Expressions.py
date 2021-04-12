@@ -48,7 +48,18 @@ else:
     print("No match has been found.")
 
 # Group
+    # always in ()
+pattern = r"bread(eggs)*bread" #tells our code that eggs can be there 0 or more times
 
+if re.match(pattern, "breadbread"):
+    print("Matchy match!")
+else:
+    print("Nada")
+
+if re.match(pattern, "breadeggseggseggsbread"):
+    print("Matchy match!")
+else:
+    print("Nada")
 
 
 # METACHARACTERS
@@ -74,7 +85,7 @@ if re.match(pattern, "gray"):
     # allows 0+ repititions of previous things (class, group, or singular character)
 pattern = r"eggy(bacon)*" # this signifies that any thing right before the star can be repeated 0+ times in a string
 
-if re.match(pattern, "egg"): #this will be accepted along with "eggsbacon" however, not with just "bacon" because eggs is always part of the string but not bacon
+if re.match(pattern, "eggy"): #this will be accepted along with "eggsbacon" however, not with just "bacon" because eggs is always part of the string but not bacon
     print("Matchy match!")
 else:
     print("Nada")
