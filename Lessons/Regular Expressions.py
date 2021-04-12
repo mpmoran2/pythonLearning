@@ -55,6 +55,16 @@ if re.match(pattern, "gray"):
     print('Matched!')
 
 # Character Class
+    # provide us a way to match up a specific set of characters
+    # ex: how streets are named or college campus buildings.
+    # a naming convention basically
+    # great for sign up and verifications
+pattern = r"[A-Z][A-Z][0-9]" # this possition should be any letter a-z or 0-9
+if re.search(pattern, "MP7"):
+    print("Match has been found.")
+else:
+    print("No match has been found.")
+
 
 # Star Metacharacter
 
