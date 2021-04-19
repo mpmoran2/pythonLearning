@@ -145,17 +145,30 @@
 # root.mainloop()
 
 # MESSAGE BOX
+# from tkinter import *
+# import tkinter.messagebox
+#
+# root = Tk()
+# tkinter.messagebox.showinfo("Hello", "You're doing great bb")
+#
+# response = tkinter.messagebox.askquestion("Checkpoint", "Did you drink some water?")
+#
+# if response == 'yes':
+#     print("Good job my bean!")
+# else:
+#     print("Please drink at least 8oz of water my bean.")
+#
+# root.mainloop()
+
+# DRAWING
 from tkinter import *
-import tkinter.messagebox
 
 root = Tk()
-tkinter.messagebox.showinfo("Hello", "You're doing great bb")
 
-response = tkinter.messagebox.askquestion("Checkpoint", "Did you drink some water?")
+canvas = Canvas(root, width=200, height=100)
+canvas.pack()
 
-if response == 'yes':
-    print("Good job my bean!")
-else:
-    print("Please drink at least 8oz of water my bean.")
+topline = canvas.create_line(0,0, 50, 100) #top left starts at 0,0
+bottomline = canvas.create_line(1, 40, 50, 100, fill="green")
 
 root.mainloop()
