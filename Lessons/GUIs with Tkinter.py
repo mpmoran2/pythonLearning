@@ -27,20 +27,31 @@ from tkinter import *
     # to get the window to stay open until we tell it to close we need the following code
 # root.mainloop() # now when you run your code, it pops up!
 
-# Grid Format
+# GRID FORMAT
+# root = Tk()
+#
+# label1 = Label(root, text= "First Name")
+# label2 = Label(root, text= "Last Name")
+#
+# entry1 = Entry(root) # for input from User
+# entry2 = Entry(root)
+#
+# label1.grid(row=0, column=0) #.grid allows us to place things in the frame as we like
+# label2.grid(row=1, column=0) #this lets us know it is under row one, aligned in the same column
+#
+# entry1.grid(row=0, column=1)
+# entry2.grid(row=1, column=1)
+#
+# root.mainloop()
+
+# SELF ADJUSTING WIDGETS
 root = Tk()
 
-label1 = Label(root, text= "First Name")
-label2 = Label(root, text= "Last Name")
+label1 = Label(root, text="First", bg="Purple", fg="White")
+label1.pack(fill=X) #this fills the window as you increase and decrese the size for side to side and stays at top by default
 
-entry1 = Entry(root) # for input from User
-entry2 = Entry(root)
-
-label1.grid(row=0, column=0) #.grid allows us to place things in the frame as we like
-label2.grid(row=1, column=0) #this lets us know it is under row one, aligned in the same column
-
-entry1.grid(row=0, column=1)
-entry2.grid(row=1, column=1)
+label1 = Label(root, text="Second", bg="Blue", fg="White")
+label1.pack(side=LEFT, fill=Y) #stats to thge left but adjuest top to bottom the way the top does
 
 root.mainloop()
 
