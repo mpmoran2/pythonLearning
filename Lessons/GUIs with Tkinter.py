@@ -67,24 +67,60 @@ from tkinter import *
 # root.mainloop()
 
 # USING CLASSES a proper way to do guis
-class Clicky:
+# class Clicky:
+#
+#     def __init__(self, rootone):
+#         frame = Frame(rootone) #create the window
+#         frame.pack()
+#
+#         self.tellme = Button(frame, text="Find Out", command=self.tell) #Create the button that does something and put it on the window
+#         self.tellme.pack()
+#
+#         self.byebye = Button(frame, text="Leave", command=frame.quit) #Create the button to quict and put it on the window
+#         self.byebye.pack(side=LEFT)
+#
+#     def tell(self):
+#         print("I love you!")
+#
+# root = Tk()
+#
+# b = Clicky(root)
+#
+# root.mainloop()
 
-    def __init__(self, rootone):
-        frame = Frame(rootone) #create the window
-        frame.pack()
+# DROP DOWNS
+def flower():
+    print('A content bean!')
 
-        self.tellme = Button(frame, text="Find Out", command=self.tell) #Create the button that does something and put it on the window
-        self.tellme.pack()
+def uhoh():
+    print('Oh no! Bean is angy!')
 
-        self.byebye = Button(frame, text="Leave", command=frame.quit) #Create the button to quict and put it on the window
-        self.byebye.pack(side=LEFT)
+def awbb():
+    print('A happy bean!')
 
-    def tell(self):
-        print("I love you!")
+def bye():
+    print('See you later!')
+
+def wut():
+    print('WHY WOULD YOU DO THAT?!')
 
 root = Tk()
 
-b = Clicky(root)
+choices = Menu(root)
+root.config(menu=choices) # tells python which menu we will be configuring
+
+subchoice = Menu(choices)
+
+choices.add_cascade(label="Feelings", menu=subchoice) # allows us to start the config with name and assign submenues
+
+subchoice.add_command(label="uwu", command=flower)
+subchoice.add_command(label="owo", command=uhoh)
+subchoice.add_command(label="nwn", command=awbb)
+subchoice.add_separator()
+subchoice.add_command(label="ByeBye", command=bye)
+
+otherchoices = Menu(choices)
+choices.add_cascade(label="Gifts", menu=otherchoices)
+otherchoices.add_command(label="Sike!", command=wut)
 
 root.mainloop()
-
