@@ -45,17 +45,26 @@ from tkinter import *
 # root.mainloop()
 
 # SELF ADJUSTING WIDGETS
+# root = Tk()
+#
+# label1 = Label(root, text="First", bg="Purple", fg="White")
+# label1.pack(fill=X) #this fills the window as you increase and decrese the size for side to side and stays at top by default
+#
+# label1 = Label(root, text="Second", bg="Blue", fg="White")
+# label1.pack(side=LEFT, fill=Y) #stats to thge left but adjuest top to bottom the way the top does
+#
+# root.mainloop()
+
+# BUTTON CLICKS
 root = Tk()
 
-label1 = Label(root, text="First", bg="Purple", fg="White")
-label1.pack(fill=X) #this fills the window as you increase and decrese the size for side to side and stays at top by default
+def becute():
+    print("You are!")
 
-label1 = Label(root, text="Second", bg="Blue", fg="White")
-label1.pack(side=LEFT, fill=Y) #stats to thge left but adjuest top to bottom the way the top does
+button1 = Button(root, text="Do you know what is cute?", command=becute) #command tells what function the button executes
+button1.pack()
 
 root.mainloop()
-
-
 
 
 
