@@ -56,15 +56,35 @@ from tkinter import *
 # root.mainloop()
 
 # BUTTON CLICKS
+# root = Tk()
+#
+# def becute():
+#     print("You are!")
+#
+# button1 = Button(root, text="Do you know what is cute?", command=becute) #command tells what function the button executes
+# button1.pack()
+#
+# root.mainloop()
+
+# USING CLASSES a proper way to do guis
+class Clicky:
+
+    def __init__(self, rootone):
+        frame = Frame(rootone) #create the window
+        frame.pack()
+
+        self.tellme = Button(frame, text="Find Out", command=self.tell) #Create the button that does something and put it on the window
+        self.tellme.pack()
+
+        self.byebye = Button(frame, text="Leave", command=frame.quit) #Create the button to quict and put it on the window
+        self.byebye.pack(side=LEFT)
+
+    def tell(self):
+        print("I love you!")
+
 root = Tk()
 
-def becute():
-    print("You are!")
-
-button1 = Button(root, text="Do you know what is cute?", command=becute) #command tells what function the button executes
-button1.pack()
+b = Clicky(root)
 
 root.mainloop()
-
-
 
