@@ -2,7 +2,7 @@
     # Graphical User Interface
 
 # this imports EVERYTHING with the * from tkinter
-from tkinter import *
+# from tkinter import *
 # need a window to place elements
 # root = Tk() # creates the class an object
 
@@ -89,57 +89,73 @@ from tkinter import *
 # root.mainloop()
 
 # DROP DOWNS and TOOLBAR and STATUSBAR
-def flower():
-    print('A content bean!')
+# def flower():
+#     print('A content bean!')
+#
+# def uhoh():
+#     print('Oh no! Bean is angy!')
+#
+# def awbb():
+#     print('A happy bean!')
+#
+# def bye():
+#     print('See you later!')
+#
+# def wut():
+#     print('WHY WOULD YOU DO THAT?!')
+#
+# def yum():
+#     print('Yummy! Tank yew')
+#
+# def bork():
+#     print('Wan wan!')
+#
+# root = Tk()
+#
+# choices = Menu(root)
+# root.config(menu=choices) # tells python which menu we will be configuring
+#
+# subchoice = Menu(choices)
+#
+# choices.add_cascade(label="Feelings", menu=subchoice) # allows us to start the config with name and assign submenues
+#
+# subchoice.add_command(label="uwu", command=flower)
+# subchoice.add_command(label="owo", command=uhoh)
+# subchoice.add_command(label="nwn", command=awbb)
+# subchoice.add_separator()
+# subchoice.add_command(label="ByeBye", command=bye)
+#
+# otherchoices = Menu(choices)
+# choices.add_cascade(label="Gifts", menu=otherchoices)
+# otherchoices.add_command(label="Sike!", command=wut)
+#
+# toolbar = Frame(root, bg="Purple")
+#
+# foodbutton = Button(toolbar, text="Feed Me!", command=yum)
+# foodbutton.pack(side=LEFT, padx=2, pady=3)
+#
+# talkbutton = Button(toolbar, text="Speak!", command=bork)
+# talkbutton.pack(side=LEFT, padx=2, pady=3)
+#
+# toolbar.pack(side=TOP, fill=X)
+#
+# status = Label(root, text="Bean loves you", bd=1, relief=SUNKEN, anchor=W) #relief is for aesthetics, anchor means it is stuck to the west
+# status.pack(side=BOTTOM, fill=X)
+#
+# root.mainloop()
 
-def uhoh():
-    print('Oh no! Bean is angy!')
-
-def awbb():
-    print('A happy bean!')
-
-def bye():
-    print('See you later!')
-
-def wut():
-    print('WHY WOULD YOU DO THAT?!')
-
-def yum():
-    print('Yummy! Tank yew')
-
-def bork():
-    print('Wan wan!')
+# MESSAGE BOX
+from tkinter import *
+import tkinter.messagebox
 
 root = Tk()
+tkinter.messagebox.showinfo("Hello", "You're doing great bb")
 
-choices = Menu(root)
-root.config(menu=choices) # tells python which menu we will be configuring
+response = tkinter.messagebox.askquestion("Checkpoint", "Did you drink some water?")
 
-subchoice = Menu(choices)
-
-choices.add_cascade(label="Feelings", menu=subchoice) # allows us to start the config with name and assign submenues
-
-subchoice.add_command(label="uwu", command=flower)
-subchoice.add_command(label="owo", command=uhoh)
-subchoice.add_command(label="nwn", command=awbb)
-subchoice.add_separator()
-subchoice.add_command(label="ByeBye", command=bye)
-
-otherchoices = Menu(choices)
-choices.add_cascade(label="Gifts", menu=otherchoices)
-otherchoices.add_command(label="Sike!", command=wut)
-
-toolbar = Frame(root, bg="Purple")
-
-foodbutton = Button(toolbar, text="Feed Me!", command=yum)
-foodbutton.pack(side=LEFT, padx=2, pady=3)
-
-talkbutton = Button(toolbar, text="Speak!", command=bork)
-talkbutton.pack(side=LEFT, padx=2, pady=3)
-
-toolbar.pack(side=TOP, fill=X)
-
-status = Label(root, text="Bean loves you", bd=1, relief=SUNKEN, anchor=W) #relief is for aesthetics, anchor means it is stuck to the west
-status.pack(side=BOTTOM, fill=X)
+if response == 'yes':
+    print("Good job my bean!")
+else:
+    print("Please drink at least 8oz of water my bean.")
 
 root.mainloop()
