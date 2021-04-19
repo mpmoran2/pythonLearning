@@ -88,7 +88,7 @@ from tkinter import *
 #
 # root.mainloop()
 
-# DROP DOWNS
+# DROP DOWNS and TOOLBAR
 def flower():
     print('A content bean!')
 
@@ -103,6 +103,8 @@ def bye():
 
 def wut():
     print('WHY WOULD YOU DO THAT?!')
+
+
 
 root = Tk()
 
@@ -122,5 +124,15 @@ subchoice.add_command(label="ByeBye", command=bye)
 otherchoices = Menu(choices)
 choices.add_cascade(label="Gifts", menu=otherchoices)
 otherchoices.add_command(label="Sike!", command=wut)
+
+toolbar = Frame(root, bg="Purple")
+
+foodbutton = Button(toolbar, text="Feed Me!", command=flower)
+foodbutton.pack(side=LEFT, padx=2, pady=3)
+
+talkbutton = Button(toolbar, text="Speak!", command=flower)
+talkbutton.pack(side=LEFT, padx=2, pady=3)
+
+toolbar.pack(side=TOP, fill=X)
 
 root.mainloop()
