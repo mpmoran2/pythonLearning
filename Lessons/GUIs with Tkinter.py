@@ -88,7 +88,7 @@ from tkinter import *
 #
 # root.mainloop()
 
-# DROP DOWNS and TOOLBAR
+# DROP DOWNS and TOOLBAR and STATUSBAR
 def flower():
     print('A content bean!')
 
@@ -104,7 +104,11 @@ def bye():
 def wut():
     print('WHY WOULD YOU DO THAT?!')
 
+def yum():
+    print('Yummy! Tank yew')
 
+def bork():
+    print('Wan wan!')
 
 root = Tk()
 
@@ -127,12 +131,15 @@ otherchoices.add_command(label="Sike!", command=wut)
 
 toolbar = Frame(root, bg="Purple")
 
-foodbutton = Button(toolbar, text="Feed Me!", command=flower)
+foodbutton = Button(toolbar, text="Feed Me!", command=yum)
 foodbutton.pack(side=LEFT, padx=2, pady=3)
 
-talkbutton = Button(toolbar, text="Speak!", command=flower)
+talkbutton = Button(toolbar, text="Speak!", command=bork)
 talkbutton.pack(side=LEFT, padx=2, pady=3)
 
 toolbar.pack(side=TOP, fill=X)
+
+status = Label(root, text="Bean loves you", bd=1, relief=SUNKEN, anchor=W) #relief is for aesthetics, anchor means it is stuck to the west
+status.pack(side=BOTTOM, fill=X)
 
 root.mainloop()
