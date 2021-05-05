@@ -13,3 +13,12 @@
 
 # Data is stored in the form of tables
     # EX: ID, Name, Address, Phone Number. These are attributes of a person.
+
+# PostgreSQL INFO
+    # A general purpose and object-relational database management system
+        # Object-relational: Objects, classes, & inheritance is directly supported in db schemas
+    # Originally designed to work on UNIX like platforms but can not work on Mac and Windows
+    # Is open source (source code available under PostgreSQL liscence
+        # Can use, modify, and distribute the code as well as use in commercial applications for free
+    # Highly stable and used by most major apps
+        # SQLlite is used more developmental
