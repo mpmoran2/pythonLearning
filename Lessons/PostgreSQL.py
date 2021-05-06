@@ -38,3 +38,11 @@
             # ex: create table students(name text,address text,age int,number int)
         # to add to the table INSERT INTO (table name) (info order) VALUSE (infor to insert);
             # ex INSERT INTO students (name,address,age,number) VALUES ('Morgan','NorCo',27,9092345678);
+
+    # Reading table data
+        # to read table data: SELECT * FROM (table name);
+            # * means you want to select ALL data
+        # to search db: SELECT*FROM (table name) WHERE (value=something);
+            # ex SELECT*FROM students WHERE age=27;
+        # to get a value: SELECT (value) FROM (table name) WHERE (value=something);
+            # ex SELECT name FROM students WHERE age=27;
