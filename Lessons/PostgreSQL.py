@@ -31,3 +31,10 @@
         # \l to make sure it was created
             # if you need to delete it: drop database (name);
         # to go into that database: \c (database name)
+
+    # Creating a table in database
+        #\d to see what tables you have in your db
+        # create table name(name type);
+            # ex: create table students(name text,address text,age int,number int)
+        # to add to the table INSERT INTO (table name) (info order) VALUSE (infor to insert);
+            # ex INSERT INTO students (name,address,age,number) VALUES ('Morgan','NorCo',27,9092345678);
