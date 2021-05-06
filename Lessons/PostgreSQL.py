@@ -22,3 +22,12 @@
         # Can use, modify, and distribute the code as well as use in commercial applications for free
     # Highly stable and used by most major apps
         # SQLlite is used more developmental
+
+    # Creating a database
+        # Open SQL Shell
+        # \l lets you see a list of databases you have
+
+        # to create: CREATE DATABASE (name);
+        # \l to make sure it was created
+            # if you need to delete it: drop database (name);
+        # to go into that database: \c (database name)
