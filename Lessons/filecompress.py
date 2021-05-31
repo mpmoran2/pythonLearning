@@ -18,4 +18,5 @@
         # First decode data to write it to new file
         # Then write it to a new file with open() and .write()
 
-
+# DECOMPRESSION
+    # using zlib.decompress(base64.b64decode(variable name)) will decode then decompress data (reverse of compressing it
