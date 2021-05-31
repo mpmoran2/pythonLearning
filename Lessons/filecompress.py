@@ -20,3 +20,7 @@
 
 # DECOMPRESSION
     # using zlib.decompress(base64.b64decode(variable name)) will decode then decompress data (reverse of compressing it
+
+# Creating Functions
+    # see compressmodule.py
+    # useful for graphical user interface
